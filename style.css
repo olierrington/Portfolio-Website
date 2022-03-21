@@ -5,6 +5,7 @@
 * {
 	scroll-behavior: smooth;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -71,7 +72,7 @@ a {
 
 .buttons img {
 	width: 12rem;
-/*	transition: transform 0.1s ease-in-out 10ms;*/
+	transition: transform 0.1s ease-in-out 10ms;
 }
 
 .buttons img:hover {
@@ -92,7 +93,7 @@ a {
 }
 
 .project {
-/*	transition: transform 0.1s ease-in-out 10ms;*/
+	transition: transform 0.1s ease-in-out 10ms;
 }
 
 .project:hover {
@@ -102,7 +103,7 @@ a {
 
 .project img, .project-page img {
 	width: 100%;
-	/*	transition: transform 0.1s ease-in-out 10ms;*/
+	transition: transform 0.1s ease-in-out 10ms;
 }
 
 .project-page img:hover {
