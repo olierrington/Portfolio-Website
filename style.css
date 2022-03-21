@@ -1,0 +1,152 @@
+:root {
+	--accent-color: #3E543E;
+}
+
+* {
+	scroll-behavior: smooth;
+	margin: 0;
+}
+
+body {
+	background-color: var(--accent-color);
+	padding: 4rem;
+}
+
+h1, h2 {
+	font-family: 'Schoolbell', sans-serif;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, p {
+	color: var(--accent-color);
+}
+
+h1 {
+	font-size: 4.6rem;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.link {
+	text-decoration: underline;
+	color: var(--accent-color);
+}
+
+.grid-container {
+	background-color: white;
+	margin: 0 auto 4rem auto;
+	display: grid;
+	padding: 4rem;
+	gap: 2rem;
+	max-width: 150rem;
+}
+
+.welcome {
+	padding-top: 6rem;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.buttons img {
+	width: 12rem;
+/*	transition: transform 0.1s ease-in-out 10ms;*/
+}
+
+.buttons img:hover {
+	transform: translateY(-0.8rem);
+}
+
+.break {
+	height: 3rem;
+}
+
+.title {
+	padding-bottom: 4rem;
+}
+
+.experience-divider img {
+	padding: 1rem 0 1rem 0;
+	width: 100%;
+}
+
+.project {
+/*	transition: transform 0.1s ease-in-out 10ms;*/
+}
+
+.project:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.project img, .project-page img {
+	width: 100%;
+	/*	transition: transform 0.1s ease-in-out 10ms;*/
+}
+
+.project-page img:hover {
+	transform: scale(1.05);
+}
+
+.project p {
+	margin-top: 1rem;
+}
+
+
+footer {
+	text-align: center;
+}
+
+footer p {
+	color: white;
+	font-size: 1.5rem;
+	padding: 2rem 0 3rem 0;
+}
+
+@media only screen and (min-width: 60rem) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.grid-col-span-2 {
+		grid-column: span 2;
+	}
+
+	.grid-col-span-3 {
+		grid-column: span 3;
+	}
+	
+	.grid-row-span-2 {
+		grid-row: span 2;
+	}
+	
+	h1 {
+		font-size: 6rem;
+	}
+	
+	.buttons {
+		flex-direction: row;
+	}
+	
+}
