@@ -86,7 +86,7 @@ button {
 	transition: transform 0.1s ease-in-out 10ms;
 }
 
-.buttons img:hover {
+button:hover {
 	transform: translateY(-0.8rem);
 }
 
