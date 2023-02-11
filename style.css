@@ -1,188 +1,124 @@
-:root {
-	--accent-color: #3E543E;
-}
-
-* {
-	scroll-behavior: smooth;
-	margin: 0;
-	box-sizing: border-box;
+:root,* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    --blue: #4183A4;
+    --grey: #979797;
+    scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--accent-color);
-	padding: 4rem;
+    background-color: var(--blue);
+    margin: 0;
+
 }
 
-h2, h3, p, button {
-	font-family: 'Open Sans', sans-serif;
+#background {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 1rem 1.8rem;
+    border-radius: 3rem;
+    width: calc(100% - 2rem);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-h1, h2, h3, p {
-	color: var(--accent-color);
+div {
+    margin: 3rem 0;
+}
+
+#header > img {
+    border-radius: 100rem;
+    width: 10rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
 }
 
 h1 {
-	font-size: 4rem;
-	margin: 0;
-	font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
 }
 
 h2 {
-	font-size: 2rem;
-	font-weight: 450;
-	
+    margin-top: 4rem;;
+    margin-bottom: 1rem;
 }
 
-h3, button {
-	font-size: 1.8rem;
-	font-weight: 300;
-}
-
-p {
-	font-size: 1.3rem;
-	font-weight: 300;
-}
-
-a {
-	text-decoration: none;
-}
-
-.link {
-	text-decoration: underline;
-	color: var(--accent-color);
-}
-
-.grid-container {
-	background-color: white;
-	margin: 0 auto 4rem auto;
-	display: grid;
-	padding: 4rem;
-	gap: 2rem;
-	max-width: 150rem;
-}
-
-.welcome {
-	padding-top: 6rem;
+h3 {
+    font-weight: 400;
+    color: var(--grey);
+    font-size: 1rem;
+    margin: 0;
 }
 
 button {
-	background-color: white;
-	color: var(--accent-color);
-	padding: 0.8rem 2.2rem;
-	border-radius: 1rem;
-	border: 0.15rem solid var(--accent-color);
-	cursor: pointer;
-	transition: transform 0.1s ease-in-out 10ms;
-	
-}
-
-.buttons {
-	display: flex;
-	flex-direction: column;
-	gap: 1.2rem;
-}
-
-.buttons img {
-	width: 12rem;
-	transition: transform 0.1s ease-in-out 10ms;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    padding: 0.5rem 1.75rem;
+    background-color: transparent;
+    border-radius: 100em;
+    font-size: 0.75rem;
+    border: 2px solid var(--grey);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 button:hover {
-	transform: translateY(-0.8rem);
+    background-color: var(--grey);
+    color: white;
 }
 
-.break {
-	height: 2rem;
+#download {
+    border-color: var(--blue);
+    margin-right: 0.4rem;
 }
 
-.title {
-	padding-bottom: 4rem;
+#download:hover {
+    background-color: var(--blue);
 }
 
-.experience-divider img {
-	padding: 1rem 0 1rem 0;
-	width: 100%;
+/*ul {
+    padding-left: 0;
+    list-style: inside;
+    list-style-type: "– ";
+}*/
+
+#experience>div {
+    margin: 0 0 1.2rem 0;
 }
 
-.project {
-	transition: transform 0.1s ease-in-out 10ms;
+li {
+    margin-bottom: 0.5rem;
 }
 
-.project:hover {
-	transform: scale(1.05);
-	cursor: pointer;
+#contact i {
+    color: var(--blue);
 }
 
-.project img, .project-page img {
-	width: 100%;
-	transition: transform 0.1s ease-in-out 10ms;
+ul {
+    margin-left: 1.6em !important;
 }
 
-.project-page img:hover {
-	transform: scale(1.05);
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.project p {
-	margin-top: 1rem;
+a:hover {
+    text-decoration: underline;
 }
 
-
-footer {
-	text-align: center;
+@media only screen and (min-width:500px) {
+    #background {
+        padding: 2rem 2.5rem;
+    }
 }
 
-footer p {
-	color: white;
-	font-size: 1.5rem;
-	padding: 2rem 0 3rem 0;
-}
-
-@media only screen and (min-width: 60rem) {
-	.grid-container {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	
-	.grid-col-span-2 {
-		grid-column: span 2;
-	}
-
-	.grid-col-span-3 {
-		grid-column: span 3;
-	}
-	
-	.grid-row-span-2 {
-		grid-row: span 2;
-	}
-	
-	h1 {
-		font-size: 5rem;
-	}
-	
-	.buttons {
-		flex-direction: row;
-	}
-	
-}
-
-@media only screen and (max-width: 36.25rem) {
-	body {
-		padding: 1.5rem;
-	}
-	
-	h1 {
-		font-size: 3rem;
-	}
-	
-	h3 {
-		font-size: 1.5rem;
-	}
-	
-	p {
-		font-size: 1.1rem;
-	}
-	
-	.grid-container {
-		padding: 1.5rem;
-		margin: 0 auto 1.5rem auto;
-	}
+/* cutoff */
+@media only screen and (min-width:800px) {
+    #background {
+        margin: 3rem auto;
+        padding: 3rem 4rem;
+        border-radius: 4rem;
+        width: 40rem;
+    }
 }
